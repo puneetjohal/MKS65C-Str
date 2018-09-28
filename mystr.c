@@ -1,3 +1,14 @@
 #include <stdio.h>
 #include <string.h>
-#include 'functions.h'
+
+int mystrlen (char * s){
+  int answer=0;
+  while(*s++){
+    answer++;
+  }
+  return answer; 
+}
+
+int main(){
+  return 0;
+}
