@@ -5,4 +5,4 @@ run:
 	./a.out
 
 mystr.o: mystr.c functions.h
-	gcc -c myStr.c 
+	gcc -c mystr.c 
