@@ -42,16 +42,29 @@ int mystrcmp( char *s1, char *s2 ){
       return 0;
     }
     else {
-      *s1++;
-      *s2++;
+      s1++;
+      s2++;
     }
   }
-  if (&(*s1) < &(*s2)){
+  if (*s1 < *s2){
     return -1;
   }
   else{
     return 1;
   }
+}
+
+//returns the address of c in *s
+char * mystrchr( char *s, char c ){
+  while (*s){
+    if (*s == c){
+      return s;
+    }
+    else{
+      s++;
+    }
+  }
+  return s;
 }
 
 int main(){
@@ -91,5 +104,10 @@ int main(){
   printf("compare s1 and s2: %d\n", strcmp(s1,s2));
   printf("compare s2 and s1: %d\n", mystrcmp(s2,s1));
   printf("compare s2 and s1: %d\n", strcmp(s2,s1));
+
+  printf("address of 'e' in s0: %s\n", mystrchr(s0,'e'));
+  printf("address of 'e' in s0: %s\n", strchr(s0,'e'));
+  printf("address of 'a' in s1: %s\n", mystrchr(s1,'a'));
+  printf("address of 'a' in s1: %s\n", strchr(s1,'a'));
   return 0;
 }
