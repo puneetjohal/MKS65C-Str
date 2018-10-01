@@ -87,9 +87,9 @@ int main(){
 
   printf("compare s0 and s2: %d\n", mystrcmp(s0,s3));
   printf("compare s0 and s2: %d\n", strcmp(s0,s3));
-  printf("compare s0 and s1: %d\n", mystrcmp(s0,s1));
-  printf("compare s0 and s1: %d\n", strcmp(s0,s1));
   printf("compare s1 and s2: %d\n", mystrcmp(s1,s2));
   printf("compare s1 and s2: %d\n", strcmp(s1,s2));
+  printf("compare s2 and s1: %d\n", mystrcmp(s2,s1));
+  printf("compare s2 and s1: %d\n", strcmp(s2,s1));
   return 0;
 }
