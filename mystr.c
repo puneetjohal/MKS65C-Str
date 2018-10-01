@@ -64,7 +64,7 @@ char * mystrchr( char *s, char c ){
       s++;
     }
   }
-  return null;
+  return NULL;
 }
 
 int main(){
