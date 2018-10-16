@@ -78,38 +78,35 @@ int main(){
   printf("s0 = %s\n", s0);
   printf("s1 = %s\n", s1);
   printf("s2 = %s\n", s2);
-  printf("s3 = %s\n", s3);
+  printf("s3 = %s\n\n", s3);
 
 
   printf("length of empty string: %d\n", mystrlen(s));
   printf("length of hello: %d\n", mystrlen(s0));
-  printf("length of goodbye: %d\n", mystrlen(s1));
-/*------------------------------------------------------------
-  printf("copying s0 into s1: %s\n", mystrcpy(s1,s0));
-  printf("copying s0 into s1: %s\n", strcpy(s1,s0));
-  printf("copying s into s0: %s\n", mystrcpy(s0,s));
-  printf("copying s into s0: %s\n", strcpy(s0,s));
-  printf("copying into s2: %s\n", mystrcpy(s2,"bye"));
-  printf("copying into s2: %s\n", strcpy(s2,"bye"));
+  printf("length of goodbye: %d\n\n", mystrlen(s1));
+
+  printf("MY: copying s0 into s1: %s\n", mystrcpy(s1,s0));
+  printf("ACTUAL: copying s0 into s1: %s\n", strcpy(s1,s0));
+  printf("MY: copying s into s0: %s\n", mystrcpy(s0,s));
+  printf("ACTUAL: copying s into s0: %s\n", strcpy(s0,s));
+  printf("MY: copying into s2: %s\n", mystrcpy(s2,"bye"));
+  printf("ACTUAL: copying into s2: %s\n\n", strcpy(s2,"bye"));
 
   printf("Concatenate s2 and  s1: %s\n", mystrncat(s2,s1,3));
   printf("Concatenate s3 and s1: %s\n", strncat(s3,s1,3));
   printf("Concatenate s2 and  s1: %s\n", mystrncat(s2,s1,0));
   printf("Concatenate s3 and s1: %s\n", strncat(s3,s1,0));
   printf("Concatenate s2 and  s1: %s\n", mystrncat(s2,s1,4));
-  printf("Concatenate s3 and s1: %s\n", strncat(s3,s1,4));
+  printf("Concatenate s3 and s1: %s\n\n", strncat(s3,s1,4));
 
   printf("compare s0 and s2: %d\n", mystrcmp(s0,s3));
-  printf("compare s0 and s2: %d\n", strcmp(s0,s3));
   printf("compare s1 and s2: %d\n", mystrcmp(s1,s2));
-  printf("compare s1 and s2: %d\n", strcmp(s1,s2));
-  printf("compare s2 and s1: %d\n", mystrcmp(s2,s1));
-  printf("compare s2 and s1: %d\n", strcmp(s2,s1));
+  printf("compare s2 and s1: %d\n\n", mystrcmp(s2,s1));
 
-  printf("address of 'e' in s0: %s\n", mystrchr(s0,'e'));
-  printf("address of 'e' in s0: %s\n", strchr(s0,'e'));
-  printf("address of 'a' in s1: %s\n", mystrchr(s1,'a'));
-  printf("address of 'a' in s1: %s\n", strchr(s1,'a'));
-------------------------------------------------------------*/
+  printf("MY: address of 'e' in s0: %s\n", mystrchr(s0,'e'));
+  printf("ACTUAL: address of 'e' in s0: %s\n", strchr(s0,'e'));
+  printf("MY: address of 'a' in s1: %s\n", mystrchr(s1,'a'));
+  printf("ACTUAL: address of 'a' in s1: %s\n\n", strchr(s1,'a'));
+
   return 0;
 }
